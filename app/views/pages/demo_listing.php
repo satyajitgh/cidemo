@@ -17,6 +17,6 @@
 		}
 	?>
 	<form id="demo-frm" target="_blank" method="post">
-		<input type="text" name="demo_id" id="demo_id">
+		<input type="hidden" name="demo_id" id="demo_id">
 	</form>
 </div>
