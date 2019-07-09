@@ -53,7 +53,17 @@ class demoDisplay {
 		$data=array();
 		$title="Demo Listing";
 		$data['categories']=json_decode($CI->Demomodel->getAllCategories());
-
+		if($CI->input->post())
+		{
+			$posts=$CI->input->post();			
+		}
+		else
+		{
+			$posts['cat_id']=$data['categories'][0]->id;
+			$posts['parent_cat_id']=0;
+			$posts['cat_name']=0;
+		}
+		$data['posts']=$posts;
 
 		$replace = array(			
 			$CI->load->view('layouts/sidebar',$data,true),				

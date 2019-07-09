@@ -34,6 +34,10 @@ class Demo extends CI_Controller {
 			$posts=$this->input->post();
 			$page['cat_name']=$posts['cat_name'];			
 		}
+		else
+		{
+			$page['cat_name']=$demo_cat_arr[0]->name;
+		}
 		//$page["layout_content"]=$this->load->view('pages/addfeed',$data['pc'],true)
 		$this->load->view('main_display',$page);
 	}

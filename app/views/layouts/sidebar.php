@@ -15,9 +15,9 @@
 						$submenu_id='submenu'.$cat->id;
 						$data_toggle=' data-toggle="collapse" ';
 						$sub_menu_class='';
-						if($this->input->post())
+						if(isset($posts['parent_cat_id']))
 						{
-							if($cat->id==$this->input->post('parent_cat_id'))
+							if($cat->id==$posts['parent_cat_id'])
 							{
 								$data_toggle=' data-toggle="collapse"  ';
 								$sub_menu_class=' in ';
@@ -33,9 +33,12 @@
 						$flag=0;
 						$child_cat_html='';
 						$menu_class='';
-						if($cat->id==$this->input->post('cat_id'))
+						if(isset($posts['cat_id']))
 						{
-							$menu_class=' active ';
+							if($cat->id==$posts['cat_id'])
+							{								
+								$menu_class=' active ';
+							}
 						}
 						$child_cat_nav_html=' data-cat-id="'.$cat->id.'"  data-parent-id="'.$cat->parent_cat_id.'" class="menu-item '.$menu_class.'" ';
 						$submenu_id='';
