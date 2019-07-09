@@ -25,7 +25,7 @@ class Demomodel extends CI_Model
   		}	
    		return json_encode($dc);			
 	}//end of function 
-	function getCategories($cat_id=1)
+	function getCategories($cat_id)
 	{
 		$this->db->select('*');
 		$this->db->from('demo_category');
@@ -36,16 +36,25 @@ class Demomodel extends CI_Model
   		$list = $rs->result_array();
   		return (is_array($list)?$list:array());			
 	}//end of function 
-	function getDemos($cat_id=1)
+	function getDemos($cat_id)
 	{
-		// $this->db->select('*');
-		// $this->db->from('demo_category');
-		// $this->db->where("demo_category.parent_cat_id",$cat_id);	
-		// $this->db->where("status",1);	
-		// $this->db->order_by("id", "asc");
-		// $rs = $this->db->get();
-  // 		$list = $rs->result_array();
-  // 		return (is_array($list)?$list:array());			
+		$this->db->select('*');
+		$this->db->from('demo_listing');
+		$this->db->where_in("categories",$cat_id);	
+		$this->db->order_by("id", "desc");
+		$rs = $this->db->get();
+  		$list = $rs->result_array();
+  		return (is_array($list)?$list:array());			
+	}//end of function 
+	function getDemo($demo_id)
+	{
+		$this->db->select('*');
+		$this->db->from('demo_listing');
+		$this->db->where("id",$demo_id);	
+		$this->db->order_by("id", "desc");
+		$rs = $this->db->get();
+  		$list = $rs->result_array();
+  		return (is_array($list)?$list:array());			
 	}//end of function 
    	
 }

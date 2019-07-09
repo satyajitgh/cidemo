@@ -13,4 +13,13 @@ $(document).ready(function() {
 					$('#cat-frm').submit();
 				}
 			});
+			$('.demo_link').on('click',function(e)
+			{
+				e.preventDefault();
+				var demo_id=$(this).data('id');
+				var href=$(this).attr('href');
+				$('#demo-frm').find('#demo_id').val(demo_id);
+				$('#demo-frm').attr('action',href);
+				$('#demo-frm').submit();
+			});
 });
