@@ -1,4 +1,5 @@
-<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">			
+<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">	
+	<div class="sidebar-menu-heading">Demo Listing </div>		
 	<nav id="column_left">	
 		<ul class="nav nav-list">
 			<?php 
@@ -81,4 +82,6 @@
 		<input type="hidden" name="cat_id" id="cat_id">
 		<input type="hidden" name="cat_name" id="cat_name">
 	</form>
+</div>
+<div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">	
 </div>

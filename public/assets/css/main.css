@@ -1,25 +1,17 @@
-#column_left {
-	background-color: #515151;
-}
-
 .nav-list li a {
 	text-decoration: none;
 	display: block;
-	padding: 10px;
+	padding: 0px;
 	cursor: pointer;
-	border-bottom: 1px solid #515151 !important;
 	color: #9d9d9d;
 }
 
 .nav-list > li > a {
 	color: #C4C4C4;
 	font-size: 14px;
-	padding-left: 13px !important;
-	border-bottom: 1px solid #585858;
 }
 
 .nav-list > li > a:hover {
-	background-color: #444444;
 }
 .nav-list li a.active
 {
@@ -58,8 +50,108 @@ width:100%;
 padding-left:0;
 padding-right: 0;
 }
-.main-header .col-sm-12 {
+.main-content,.main-header .col-sm-12 {
     padding-left: 10%;
     padding-right: 10%;
+}
+.col-lg-12.col-md-12.col-sm-12.col-xs-12{
+padding-left:0;
+padding-right:0;
+}
+.page-header{
+    background-color:#ebe8e3;
+    margin:0;
+    padding:40px 0 40px;
+    text-align: center;
+    }
+.cat-title,.banner-title {
+    font-size: 35px;
+    letter-spacing: -1px;
+    color: #2d2d35;
+    font-family: "Archivo Black";
+    font-weight: 400;
+    padding-bottom:5px;
+}
+
+.banner-desc {
+    font-size: 60px;
+    letter-spacing: -3px;
+    line-height: 63px;
+    color: #2d2d35;
+    font-family: "Archivo Black";
+    font-weight: 400;
+}
+
+.banner-desc span{
+    color:#d83060;
+    }
+#column_left li a {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 58px;
+    color: #46484c;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.sidebar-menu-heading {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 58px;
+    color: #000000;
+    font-family: "Poppins";
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+}
+
+.main-content {
+    padding-top: 70px;
+}
+
+.top-bar {
+    padding: 5px 0;
+    border: 1px solid #ccc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left:5px;
+}
+.top-bar span{
+width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  margin: 0 3px;
+    }
+.demo-title {
+    font-size: 20px!important;
+    line-height: 20px!important;
+    color: #151618!important;
+    font-family: "Poppins"!important;
+    font-weight: 600!important;
+    text-align: center!important;
+    margin-top: 35px!important;
+}
+
+.demo-desc {
+    font-size: 14px;
+    line-height: 19px;
+    color: #5c5f63;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.content-listing img:hover {
+    box-shadow: 7px 32px 42px 18px rgba(0, 0, 0, 0.32156862745);
+}
+
+.content-listing img {
+    border-radius: 0 0 20px 20px;
+}
+
+.active {
+    color: #d83060;
 }
 

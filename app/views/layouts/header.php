@@ -6,7 +6,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta charset="utf-8">
 	<title>__PAGE_TITLE__</title>
 	<link href="<?php echo site_url('public/assets/css/'); ?>bootstrap.min.css" rel="stylesheet" id="bootstrap-css">			
-	<link href="<?php echo site_url('public/assets/css/'); ?>main.css" rel="stylesheet" id="bootstrap-css">			
+	<link href="<?php echo site_url('public/assets/css/'); ?>main.css" rel="stylesheet" id="bootstrap-css">
+	<link href="http://fonts.googleapis.com/css?family=Archivo+Black:400%7CNoto+Sans:400" rel="stylesheet" property="stylesheet" media="all">
+	<link rel='stylesheet'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C300%2C700%7CRoboto%3A400%2C100%2C%2C300%2C500%2C700%2C900%7CPoppins%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900' media='all' />			
+	<link rel='stylesheet' id='wpautomate-theme-style-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C300%2C700%7CRoboto%3A400%2C100%2C%2C300%2C500%2C700%2C900%7CPoppins%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900' media='all' />
 	<div class="main-header">
 		<div class="container">		
 			<div class="top-header"> 
