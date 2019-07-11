@@ -10,6 +10,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link href="http://fonts.googleapis.com/css?family=Archivo+Black:400%7CNoto+Sans:400" rel="stylesheet" property="stylesheet" media="all">
 	<link rel='stylesheet'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C300%2C700%7CRoboto%3A400%2C100%2C%2C300%2C500%2C700%2C900%7CPoppins%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900' media='all' />			
 	<link rel='stylesheet' id='wpautomate-theme-style-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C400%2C600%2C300%2C700%7CRoboto%3A400%2C100%2C%2C300%2C500%2C700%2C900%7CPoppins%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900' media='all' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 	<div class="main-header">
 		<div class="container">		
 			<div class="top-header"> 
