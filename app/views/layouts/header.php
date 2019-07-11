@@ -19,8 +19,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					<div class="col-sm-6 header-menu top-header-menu"> 
 					<ul id="top-tier-menu" class="">
-					<li id="menu-item-1144" class="menu-item"><a href="http://localhost/itobuzsite/1138-2/">Our Process</a></li>
-					<li id="menu-item-1208" class="menu-item"><a href="#">Our Passion</a></li>
+					<li class="menu-item"><a href="#">Our Technologies</a></li>
+					<li class="menu-item"><a href="#">Blog</a></li>
+					<li class="menu-item"><a href="#">Contact Us</a></li>
+					<li class="menu-item"><a href="#">Awards & Accrediations</a></li>
 					</ul>
 					</div>
 				</div>
@@ -33,10 +35,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="col-sm-9 header-menu main-header-menu"> 
 					<nav class="main-nav">
 						<ul  id="top-tier-menu" class="">
-						<li class="menu-item"><a href="#">Industries</a></li>
-						<li class="menu-item"><a href="#">Services</a></li>
-						<li class="menu-item"><a href="#">Our Process</a></li>
 						<li class="menu-item"><a href="#">About Us</a></li>
+						<li class="menu-item"><a href="#">Our Process</a></li>
+						<li class="menu-item"><a href="#">Services<span class="pull-right"><b class="caret"></b></span></a></li>
+						<li class="menu-item"><a href="#">Industries<span class="pull-right"><b class="caret"></b></span></a></li>
 						</ul>
 						</nav>
 					</div>
