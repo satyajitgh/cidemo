@@ -140,13 +140,14 @@ width: 6px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 35px;
+    padding-top: 5px;
 }
 
-.content-listing img:hover {
+.listing-featuered-image:hover {
     box-shadow: 7px 32px 42px 18px rgba(0, 0, 0, 0.32156862745);
 }
 
-.content-listing img {
+.listing-featuered-image {
     border-radius: 0 0 20px 20px;
 }
 
