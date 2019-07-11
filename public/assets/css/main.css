@@ -295,5 +295,12 @@ font-weight: 700;
     font-style: normal;
     color: #5b5b60;
 }
+.listing-featuered-image {
+    padding: 40% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
 
                  
