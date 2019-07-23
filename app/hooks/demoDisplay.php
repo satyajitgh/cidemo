@@ -39,10 +39,10 @@ class demoDisplay {
 		$buffer = $CI->output->get_output();		
 	 
 		 $search = array(		
-			'{__SIDEBAR__}',			// Set Common SIDEBAR,
 			'{__HEADER__}',			// Set Common HEADER,
 			'{__FOOTER__}',			// Set Common FOOTER,
-			'{__PAGE_TITLE__}',			// Page Title,				
+			'{__SIDEBAR__}',			// Set Common SIDEBAR,
+			'{__PAGE_TITLE__}'			// Page Title,				
 		  );
 	 	$od = $CI->session->userdata('operator_details');
 	 	$ud = $CI->session->userdata('userdetails');
@@ -66,10 +66,10 @@ class demoDisplay {
 		$data['posts']=$posts;
 
 		$replace = array(			
-			$CI->load->view('layouts/sidebar',$data,true),				
 			$CI->load->view('layouts/header',$data,true),				
 			$CI->load->view('layouts/footer',$data,true),				
-			$title				
+			$CI->load->view('layouts/sidebar',$data,true),
+			$title
 		);
 
 		$buffer = preg_replace($search, $replace, $buffer);

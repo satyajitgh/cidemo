@@ -38,12 +38,20 @@ class Demomodel extends CI_Model
 	}//end of function 
 	function getDemos($cat_id)
 	{
-		$this->db->select('*');
-		$this->db->from('demo_listing');
-		$this->db->where_in("categories",$cat_id);	
-		$this->db->order_by("id", "desc");
-		$rs = $this->db->get();
-  		$list = $rs->result_array();
+		echo $cat_id;
+		echo "SELECT * FROM demo_listing WHERE categories = $cat_id";
+		// pr($cat_id);
+		// die();
+		// $this->db->select('*');
+		// $this->db->from('demo_listing');
+		// $this->db->where_in("categories",$cat_id);	
+		// $this->db->order_by("id", "desc");
+
+		$query = $this->db->query("SELECT * FROM demo_listing WHERE categories = $cat_id");
+		// $rs = $this->db->get();
+  // 		$list = $rs->result_array();
+		$list = $query->result();
+		$list = json_decode(json_encode($list), true); 
   		return (is_array($list)?$list:array());			
 	}//end of function 
 	function getDemo($demo_id)

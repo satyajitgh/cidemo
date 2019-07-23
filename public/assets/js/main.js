@@ -1,6 +1,6 @@
 $(document).ready(function() {
  
-			$('.menu-item').on('click',function()
+			$('#column_left .menu-item').on('click',function()
 			{
 				var cat_id=$(this).data('cat-id');
 				var cat_name=$(this).html();

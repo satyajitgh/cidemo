@@ -1,4 +1,4 @@
-__HEADER__
+<?php get_header(); ?>
 <body>
 <div class="container-fluid">
 	<div class="row">
@@ -13,20 +13,12 @@ __HEADER__
 	<div class="main-content">
 
 	<div class="row">
-		__SIDEBAR__
+		<?php get_sidebar(); ?>
 		<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 content-listing">
 				<div class="cat-title"><?php echo $cat_name; ?></div>
-				<?php  echo (isset($layout_content)?$layout_content:''); ?>   
+				<?php  the_content($layout_content); ?>   
 		</div>
 	</div>
 </div>
-
-	<!-- <div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<div class="page-header">
-			</div>
-		</div>
-	</div>
- -->
 </div>
-__FOOTER__
+<?php get_footer(); ?>
